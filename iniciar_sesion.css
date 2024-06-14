@@ -62,6 +62,13 @@
   padding-bottom: 15%;
 }
 
+.login__propietario{
+  font-size: 20px;
+  margin-bottom: 2em;
+  text-decoration: none;
+  color: black;
+}
+
 .login__googlebutton{
   background-color: rgb(47, 118, 255);
   color: white;
@@ -75,7 +82,7 @@
 
 
 .login__texto{
-  margin: 2em;
+  margin: 1em;
 }
 
 .login__input{
@@ -108,8 +115,11 @@
   border: none;
   border-radius: 8px;
   font-size: 15px;
-  
-  
+}
+
+.button__cancelar_link{
+  text-decoration: none;
+  color: black;
 }
 
 .login__button--iniciar{
