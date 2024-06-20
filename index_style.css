@@ -36,6 +36,10 @@
   margin-left: 15%;
 }
 
+.navbar__logo{
+  width: 100%;
+}
+
 .navbar__linkhome{
   color: white;
   font-weight: 500;
@@ -190,6 +194,7 @@ opacity: 50%;
 .section2__subtitulo2{
   font-size: 33px;
   font-weight: 500;
+  display: flex;
 }
 
 .section2__hotels2{
@@ -238,4 +243,89 @@ transform: scale(1.1);
 
 .hotels1__container:active{
   transform: scale(1.03);
+}
+
+
+@media(max-width:425px){
+
+  .navbar__imgcont1{
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
+  }
+
+  .navbar__logo{
+    
+    width: 80%;
+  }
+  .navbar__linkhome{
+    font-size: 25px;
+    
+  }
+
+  .navbar__linklogin{
+    margin-right: 10%;
+  }
+
+  .navbar__linkcreate{
+    margin-left: 10%;
+  }
+
+  .section1__titulo{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .section1__parrafo{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .section1__form{
+    flex-direction: column;
+  }
+
+  .section1__selectbox{
+    width: 100%;
+  }
+
+  .section1__button1{
+    width: 80%;
+  }
+
+  .section2{
+    height: 250vh;
+  }
+  .section2__subtitulo1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 4%;
+  }
+
+  .section2__hotels1{
+    flex-direction: column;
+    align-items: center;
+    height: 44%;
+  }
+
+  .hotels1__container{
+    width: 95%;
+    margin-bottom: 10%;
+  }
+
+  .section2__subtitulo2{
+    margin-top: 35%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .section2__hotels2{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotels2__container{
+    width: 100%;
+    margin-bottom: 10%;
+  }
 }
