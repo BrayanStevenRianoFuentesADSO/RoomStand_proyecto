@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+}
+
+.navbar{
+  background-color: rgb(47, 118, 255);
+  width: 100%;
+  height: 9vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  
+}
+
+.navbar__logo_container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.navbar__button_container{
+  display: flex;
+  align-items: center;
+}
+
+.navbar__button{
+  color: white;
+  text-decoration: none;
+}
+
+.volver__icono{
+  margin-top: 15%;
+}
+
+.section1{
+  width: 100%;
+  height: 285vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.estadisticas{
+  width: 72%;
+  height: 75%;
+  background-color: rgb(239, 239, 239);
+  margin-top: 4%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register__rooms{
+  width: 88%;
+  height: 22%;
+  margin-top: 4.5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.register__titulo_container{
+  background-color: rgb(47, 118, 255);
+  width: 100%;
+  height: 18%;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 1px 4px 0px rgba(16, 25, 105, 0.2);
+}
+
+.register__cards__container{
+  width: 100%;
+  height: 82%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.register__card{
+  width: 23.5%;
+  height: 75%;
+  background-color: white;
+  margin-top: 4%;
+  border-radius: 12px;
+  box-shadow: 1px 4px 0px rgba(100, 100, 100, 0.2);
+}
+
+.register__img{
+  width: 100%;
+}
+
+.reservaciones{
+  width: 72%;
+  height: 20%;
+  margin-top: 4%;
+}
+
+.reservacion__titulo_container{
+  width: 100%;
+  height: 20%;
+  background-color: rgb(47, 118, 255);
+  display: flex;
+  color: white;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.reserva__cards{
+  display: flex;
+  align-items: center;
+  margin-top: 6%;
+  justify-content: space-between;
+}
+
+.reserva__nombre_room{
+  font-weight: 600;
+  margin-top: 10%;
+  margin-left: 1%;
+}
+
+.comentarios{
+  height: 25%;
+  width: 72%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.comentarios__titulo{
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 15%;
+  background-color: rgb(47, 118, 255);
+  border-radius: 8px;
+  align-items: center;
+}
+
+.comentario{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.comentario__img_container{
+  width: 48%;
+  height: 80%;
+  background-color: lightgreen;
+  margin-right: 5%;
+  margin-left: 5%;
+  border-radius: 8px;
+}
+
+.comentario__texto{
+  font-size: 20px;
+  margin-right: 5%;
+}
