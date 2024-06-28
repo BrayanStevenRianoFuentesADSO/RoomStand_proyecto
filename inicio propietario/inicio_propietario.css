@@ -1,20 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-*{
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0;
-  font-family: "Ubuntu", sans-serif;
-  font-style: normal;
-}
+@import url("../custom_propierties.css");
 
-.navbar{
-  background-color: rgb(47, 118, 255);
-  width: 100%;
-  height: 7vh;
-  display: flex;
-  align-items: center;
-}
+ 
 
 .navbar__imgcontainer{
   width: auto;
@@ -39,7 +27,7 @@
 .section1{
   width: 100%;
   height: 63vh;
-  background-image: url(fondohotel1.png);
+  background-image: url(../imagenes/fondohotel1.png);
   color: white;
   overflow: hidden;
   position: relative;
@@ -50,7 +38,7 @@
 }
 
 .encabezado{
-  background-color: rgb(47, 118, 255);
+  background-color: var(--azul);
   width: 100%;
   height: 30vh;
   display: flex;
@@ -109,7 +97,7 @@
 .section1__cuadro_icono{
   width: 11%;
   height: 20%;
-  background-color: rgb(47, 118, 255);
+  background-color: var(--azul);
   border-radius: 8px;
   margin-right: 10%;
 }
@@ -134,7 +122,7 @@
 
 .section1__button{
   position: relative;
-  background-color: rgb(47, 118, 255);
+  background-color: var(--azul);
   width: 30%;
   height: 20%;
   color: white;
@@ -164,9 +152,6 @@
   'GRAD' 0,
   'opsz' 24
 }
-
-
-
 
 .section2{
   height: 200vh;
@@ -223,7 +208,7 @@
   align-self: flex-start;
   margin-left: 7%;
   font-size: 30px;
-  background-color: rgb(47, 118, 255);
+  background-color: var(--azul);
   width: 86%;
   height: 10%;
   display: flex;
@@ -281,7 +266,7 @@ color: rgb(100, 100, 100);
   width: 18%;
   height: 7%;
   color: white;
-  background-color: rgb(47, 118, 255);
+  background-color: var(--azul);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radio8);
 }

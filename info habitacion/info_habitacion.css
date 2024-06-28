@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('../custom_propierties.css');
 
 *{
   padding: 0;
@@ -8,13 +9,10 @@
   font-style: normal;
 }
 
-:root{
-  --naranja:rgb(238, 74, 0);
-  
-}
 
-.navbar{
-  background-color: rgb(238, 74, 0);
+
+.navbar_naranja{
+  background-color: var(--naranja);
   width: 100%;
   height: 10vh;
   display: flex;
@@ -90,7 +88,6 @@
 .section1__container{
   width: 49%;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -102,9 +99,7 @@
   background-color: blanchedalmond;
   margin-left: 3%;
   margin-top: 2%;
- 
   grid-template-columns: repeat(2, auto);
-  
   grid-template-rows: repeat(2,auto);
 }
 
@@ -114,8 +109,6 @@
   display: flex;
   justify-content: space-around;
   margin-left: 5%;
-  
-
 }
 
 .calificacion__numero{
