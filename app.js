@@ -1,47 +1,32 @@
+
+import { validar_texto } from "./modulo.js"
+import { validar_numeros } from "./modulo.js"
+import { validar_correo } from "./modulo.js"
+import { error_input } from "./modulo.js"
+
 let dom=document
 
+
+//TODOS LOS ELEMENTOS QUE SE ENCUENTRAN EN EL HTML 
 let id=dom.querySelector("#id")
+let input = dom.querySelectorAll("input")
 let nombre =dom.querySelector("#nombre")
 let telefono=dom.querySelector("#telefono")
 let pais =dom.querySelector("#pais")
+let email =dom.querySelector("#email")
+let password=dom.querySelector("#password")
+let boton_registro =dom.querySelector("#register_button")
 
+//RESTRINGE EL ACCESO DE DATOS NO PERMITIDOS
+validar_numeros(id)
+validar_texto(nombre)
+validar_numeros(telefono)
+validar_texto(pais)
+validar_correo(email)
 
-
-telefono.addEventListener('input', function(event){
-    let regexp=/^[0-9]+$/
-
-    if(regexp.test(telefono.value)){
-        console.log("se ha ingresado un numero")
-    }
-
-    else{
-        telefono.value=telefono.value.replace(/[^0-9]$/, '');
-        console.log("no se ha ingresado un numero")
-    }
-})
-
-nombre.addEventListener('input', function(event){
-    let regexp=/^[a-zA-Z]+$/
-
-    if(regexp.test(nombre.value)){
-        console.log("se ha ingresado un numero")
-    }
-
-    else{
-        nombre.value=nombre.value.replace(/[^a-zA-Z]$/, '');
-        console.log("no se ha ingresado un numero")
-    }
-})
-
-pais.addEventListener('input', function(event){
-    let regexp=/^[a-zA-Z]+$/
-
-    if(regexp.test(pais.value)){
-        console.log("se ha ingresado un numero")
-    }
-
-    else{
-        pais.value=pais.value.replace(/[^a-zA-Z]$/, '');
-        console.log("no se ha ingresado un numero")
-    }
-})
+//CAMBIA EL COLOR DEL INPUT QUE SE ECUENTRA VACIO DESPUES DE OPRIMIR EL BOTON
+error_input(boton_registro, id)
+error_input(boton_registro, nombre)
+error_input(boton_registro, telefono)
+error_input(boton_registro, pais)
+error_input(boton_registro, email)

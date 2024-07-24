@@ -33,10 +33,16 @@
 }
 
 .section1__titulo{
-  align-self: flex-start;
-  margin-left: 24%;
-  margin-bottom: 2%;
-  font-size: 32px;
+  font-size: 30px;
+  font-weight: 500;
+  padding-right: 34%;
+  background-color: rgb(47, 118, 255);
+  color: white;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  width: 52%;
 }
 
 
