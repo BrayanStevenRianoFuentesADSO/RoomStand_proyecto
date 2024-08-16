@@ -1,10 +1,15 @@
 
-import { validar_texto } from "./modulo.js"
-import { validar_numeros } from "./modulo.js"
-import { validar_correo } from "./modulo.js"
-import { error_input } from "./modulo.js"
+
+
+import { validar_texto } from "./modules/validar_texto.js"
+import { validar_correo } from "./modules/vaidar_correo.js"
+import { validar_numeros } from "./modules/validar_numero.js"
+import { error_input } from "./modules/input_error.js"
+
+
 
 let dom=document
+
 
 
 //TODOS LOS ELEMENTOS QUE SE ENCUENTRAN EN EL HTML 
@@ -29,4 +34,40 @@ error_input(boton_registro, id)
 error_input(boton_registro, nombre)
 error_input(boton_registro, telefono)
 error_input(boton_registro, pais)
-error_input(boton_registro, email)
+
+error_input(boton_registro, password)
+
+
+const user_data={
+    id:id.value,
+        nombre: nombre.value,
+        telefono: telefono.value,
+        pais: pais.value,
+        email: email.value,
+        password: password.value
+}
+
+
+boton_registro.addEventListener('click', function (event){
+
+    let valido_enviar=true
+
+    inputs.array.forEach(element => {
+        if(element==""){
+            valido_enviar=false
+        }
+        else{
+            fetch('http://localhost:3000/users',{
+                method: 'POST',
+                body:JSON.stringify({
+                user_data
+                }),
+                headers:{
+                    'content-type':'application/json',
+                }
+            }) 
+        }
+    });
+})
+
+
