@@ -8,5 +8,7 @@ export function error_input(boton, input){
             input.style.border="solid 2px lightgreen"
 
         }
+
+
     })
 }

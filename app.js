@@ -2,7 +2,7 @@
 
 
 import { validar_texto } from "./modules/validar_texto.js"
-import { validar_correo } from "./modules/vaidar_correo.js"
+import { validar_correo } from "./modules/validar_correo.js"
 import { validar_numeros } from "./modules/validar_numero.js"
 import { error_input } from "./modules/input_error.js"
 
@@ -38,14 +38,7 @@ error_input(boton_registro, pais)
 error_input(boton_registro, password)
 
 
-const user_data={
-    id:id.value,
-        nombre: nombre.value,
-        telefono: telefono.value,
-        pais: pais.value,
-        email: email.value,
-        password: password.value
-}
+
 
 
 boton_registro.addEventListener('click', function (event){
@@ -60,13 +53,14 @@ boton_registro.addEventListener('click', function (event){
             fetch('http://localhost:3000/users',{
                 method: 'POST',
                 body:JSON.stringify({
-                user_data
+                
                 }),
                 headers:{
                     'content-type':'application/json',
                 }
             }) 
         }
+        console.log(valido_enviar)
     });
 })
 

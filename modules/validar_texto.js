@@ -1,3 +1,4 @@
+
 export function validar_texto(input_texto){
     input_texto.addEventListener('input', function(event){
 
